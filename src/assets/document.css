@@ -11,7 +11,7 @@
  * Variables
  */
 :root {
-    --header-footer-min-height: 2.5rem;
+    --header-footer-min-height: 3.5rem;
     --body-padding: 1rem;
     --article-max-width: 8.5in;
     --indent-size: min(0.5in, 6vw);
@@ -136,7 +136,7 @@
     }
     
     body {
-        background: linear-gradient(to top, #d0d0d0 2rem, #bbb 10rem);
+        background: #bbb;
         padding: var(--body-padding);
         min-height: 100vh;
     }
@@ -145,20 +145,22 @@
         margin-inline: auto;
         max-width: var(--article-max-width);
         min-height: var(--header-footer-min-height);
-        padding: 0.5rem;
+        padding-block: 1rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 0.875rem;
     }
 
     :is(header, footer) nav :is(a, a:visited) {
         display: inline-block;
-        color: #007;
-        text-shadow: 1px 1px #eee;
+        color: #800;
+        /* text-shadow: 0 1px #fff; */
         text-decoration: none;
     }
 
     :is(header, footer) nav a::before {
-        content: "➤ "
+        content: "➤";
+        display: inline-block;
+        padding-inline: 0.5em;
     }
 
     article {
