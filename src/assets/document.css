@@ -1,0 +1,119 @@
+/*
+ * Reset
+ */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+ * Variables
+ */
+:root {
+    --header-footer-min-height: 2.5rem;
+    --body-padding: 1rem;
+    --article-max-width: 8.5in;
+    --indent-size: min(0.75in, 11vw);
+}
+
+
+/*
+ * Print-only styles
+ */
+@media print {
+    header, footer {
+        /* Hide the header and footer nav links */
+        display: none;
+    }
+}
+
+/*
+ * Styles for both print and screen
+ */
+@media screen, print {
+    p {
+        margin-block: 1rem;
+    }
+
+    pre {
+        /* Allow long lines in <pre> tags to wrap */
+        white-space: pre-wrap;
+    }
+
+    blockquote {
+        /* Indent block quotes */
+        margin-inline: var(--indent-size);
+    }
+    
+    p:has(cite) {
+        margin-inline: calc(1.5 * var(--indent-size));
+    }
+
+    p:has(cite)::before {
+        content: '—';
+    }
+}
+
+/*
+ * Screen-only styles
+ */
+@media screen {
+    html {
+        overflow-y: scroll;
+    }
+    
+    body {
+        background: #bbb;
+        padding: var(--body-padding);
+    }
+
+    header, footer {
+        margin-inline: auto;
+        max-width: var(--article-max-width);
+        min-height: var(--header-footer-min-height);
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    :is(header, footer) > nav > :is(a, a:visited) {
+        display: inline-block;
+        color: #700;
+        text-shadow: 0 1px #ddd;
+    }
+
+    article {
+        margin-inline: auto;
+        min-height: calc(
+            100vh
+            - 2 * var(--header-footer-min-height)
+            - 2 * var(--body-padding)
+        );
+        border: 1px solid #999;
+        box-shadow: 0 2px 6px #0004;
+        background: #fff;
+        padding: var(--indent-size);
+        max-width: var(--article-max-width);
+        hyphens: auto;
+        text-align: justify;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        margin-block: 2em 1em;
+    }
+
+    article > :first-child {
+        margin-block-start: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --body-padding: 0;
+    }
+
+    article {
+        border-inline: none;
+    }
+}
