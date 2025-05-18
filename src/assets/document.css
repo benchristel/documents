@@ -17,6 +17,40 @@
     --indent-size: min(0.75in, 11vw);
 }
 
+/*
+ * Font imports
+ */
+@font-face {
+    font-family: 'Iowan Old Style';
+    src: url(/assets/fonts/iowan-old-style/bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Iowan Old Style';
+    src: url(/assets/fonts/iowan-old-style/regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Iowan Old Style';
+    src: url(/assets/fonts/iowan-old-style/italic.ttf);
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Iowan Old Style';
+    src: url(/assets/fonts/iowan-old-style/bold-italic.ttf);
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
 
 /*
  * Print-only styles
@@ -38,6 +72,10 @@
  * Styles for both print and screen
  */
 @media screen, print {
+    html {
+        font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif; 
+    }
+    
     p {
         margin-block: 1rem;
     }
