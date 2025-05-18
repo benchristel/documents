@@ -99,8 +99,21 @@
         margin-inline: calc(1.5 * var(--indent-size));
     }
 
-    article p:has(cite)::before {
-        content: '—';
+    article h1 {
+        margin-block: 2rem;
+        border-block-end: 1px solid #000;
+        padding-block: 0.25em;
+        font-size: 2rem;
+    }
+
+    article h2 {
+        margin-block: 2em 1em;
+        border-block-end: 1px solid #000;
+        padding-block: 0.25em;
+    }
+
+    article > :first-child {
+        margin-block-start: 0;
     }
 }
 
@@ -122,13 +135,12 @@
         max-width: var(--article-max-width);
         min-height: var(--header-footer-min-height);
         padding: 0.5rem;
-        font-size: 0.875rem;
     }
 
     :is(header, footer) > nav > :is(a, a:visited) {
         display: inline-block;
         color: #700;
-        text-shadow: 0 1px #ddd;
+        text-shadow: 1px 1px #eee;
     }
 
     article {
@@ -143,23 +155,6 @@
         background: #fff;
         padding: var(--indent-size);
         max-width: var(--article-max-width);
-    }
-
-    article h1 {
-        margin-block: 2rem;
-        border-block-end: 1px solid #000;
-        padding-block: 0.25em;
-        font-size: 2.25rem;
-    }
-
-    article h2 {
-        margin-block: 2em 1em;
-        border-block-end: 1px solid #000;
-        padding-block: 0.25em;
-    }
-
-    article > :first-child {
-        margin-block-start: 0;
     }
 }
 

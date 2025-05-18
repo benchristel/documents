@@ -36,6 +36,8 @@ In a poorly-structured codebase, all the code has a similar texture. Everywhere 
 
 When concerns are separated, on the other hand, there is contrast between the parts. The UI code looks very different from the database access code. When you open a file, you can tell at a glance what type of thing it is, and know where it fits in the architecture.
 
+### The Squint Test
+
 Sandi Metz has a technique she calls the squint test: you lean back and squint at the code, looking for changes in shape and changes in color. The more coherence and consistency you see in each part, the better the code is.
 Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
 
@@ -43,7 +45,13 @@ Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit am
 >
 > Contrast is the thing which creates differentiation, and allows differentiation. It is the differentiation of the void which gives birth to matter. All differentiation requires that contrast is created in space, in order to give birth to anything at all.
 
-Christopher Alexander, <cite>The Phenomenon of Life</cite>
+—Christopher Alexander, <cite>The Phenomenon of Life</cite>
+
+We can make a list that looks like this:
+
+- one
+- two
+- three
 
 ---
 
