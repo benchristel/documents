@@ -14,7 +14,7 @@
     --header-footer-min-height: 2.5rem;
     --body-padding: 1rem;
     --article-max-width: 8.5in;
-    --indent-size: min(0.75in, 11vw);
+    --indent-size: min(0.75in, 9vw);
 }
 
 /*
