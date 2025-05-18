@@ -14,7 +14,8 @@
     --header-footer-min-height: 2.5rem;
     --body-padding: 1rem;
     --article-max-width: 8.5in;
-    --indent-size: min(0.75in, 9vw);
+    --indent-size: min(0.5in, 5vw);
+    --margin-size: min(0.75in, 8vw);
 }
 
 /*
@@ -81,8 +82,14 @@
         text-align: justify;
     }
     
-    article p {
+    /* Add vertical margin between block elements */
+    article :is(p, ul, ol) {
         margin-block: 1rem;
+    }
+
+    /* indent lists */
+    article :is(ul, ol) {
+        margin-inline-start: var(--indent-size);
     }
 
     article pre {
@@ -96,7 +103,8 @@
     }
     
     article p:has(cite) {
-        margin-inline: calc(1.5 * var(--indent-size));
+        /* Indent the citations of block quotes */
+        margin-inline: calc(2 * var(--indent-size));
     }
 
     article h1 {
@@ -153,7 +161,7 @@
         border: 1px solid #999;
         box-shadow: 0 2px 6px #0004;
         background: #fff;
-        padding: var(--indent-size);
+        padding: var(--margin-size);
         max-width: var(--article-max-width);
     }
 }
