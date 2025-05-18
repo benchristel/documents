@@ -1,0 +1,16 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": ".*",
+        "cmd": "bunx mdsite"
+      },
+    ]
+  },
+  "files.exclude": {
+    "docs": true,
+    "public": true,
+    "src/log.html": true,
+    "src/conlangs/lingua-franca/*.md": true,
+  }
+}
