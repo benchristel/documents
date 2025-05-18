@@ -14,8 +14,8 @@
     --header-footer-min-height: 2.5rem;
     --body-padding: 1rem;
     --article-max-width: 8.5in;
-    --indent-size: min(0.5in, 5vw);
-    --margin-size: min(0.75in, 8vw);
+    --indent-size: min(0.5in, 6vw);
+    --margin-size: min(0.75in, 9vw);
 }
 
 /*
@@ -83,7 +83,9 @@
     }
     
     /* Add vertical margin between block elements */
-    article :is(p, ul, ol) {
+    article p,
+    /* Top-level lists have block margin, but nested lists do not */
+    article > :is(ul, ol) {
         margin-block: 1rem;
     }
 
@@ -134,8 +136,9 @@
     }
     
     body {
-        background: #bbb;
+        background: linear-gradient(to top, #d0d0d0 2rem, #bbb 10rem);
         padding: var(--body-padding);
+        min-height: 100vh;
     }
 
     header, footer {
@@ -143,19 +146,26 @@
         max-width: var(--article-max-width);
         min-height: var(--header-footer-min-height);
         padding: 0.5rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.875rem;
     }
 
-    :is(header, footer) > nav > :is(a, a:visited) {
+    :is(header, footer) nav :is(a, a:visited) {
         display: inline-block;
-        color: #700;
+        color: #007;
         text-shadow: 1px 1px #eee;
+        text-decoration: none;
+    }
+
+    :is(header, footer) nav a::before {
+        content: "➤ "
     }
 
     article {
         margin-inline: auto;
         min-height: calc(
             100vh
-            - 2 * var(--header-footer-min-height)
+            - var(--header-footer-min-height)
             - 2 * var(--body-padding)
         );
         border: 1px solid #999;

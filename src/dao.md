@@ -1,7 +1,8 @@
 # Dào Dé Jīng
 
-<pre>
+## 1.
 
+<pre>
 The tao that can be told
 is not the eternal Tao
 The name that can be named
@@ -20,7 +21,6 @@ This source is called darkness.
 
 Darkness within darkness.
 The gateway to all understanding. 
-
 </pre>
 
 > When people see some things as beautiful,<br>
@@ -52,6 +52,13 @@ We can make a list that looks like this:
 - one
 - two
 - three
+  - a nested list
+  - looks like this
+    - a third level
+
+1. one
+2. two
+3. three
 
 ---
 
