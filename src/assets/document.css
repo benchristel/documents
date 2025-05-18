@@ -75,26 +75,31 @@
     html {
         font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif; 
     }
+
+    article {
+        hyphens: auto;
+        text-align: justify;
+    }
     
-    p {
+    article p {
         margin-block: 1rem;
     }
 
-    pre {
+    article pre {
         /* Allow long lines in <pre> tags to wrap */
         white-space: pre-wrap;
     }
 
-    blockquote {
+    article blockquote {
         /* Indent block quotes */
         margin-inline: var(--indent-size);
     }
     
-    p:has(cite) {
+    article p:has(cite) {
         margin-inline: calc(1.5 * var(--indent-size));
     }
 
-    p:has(cite)::before {
+    article p:has(cite)::before {
         content: '—';
     }
 }
@@ -138,13 +143,19 @@
         background: #fff;
         padding: var(--indent-size);
         max-width: var(--article-max-width);
-        hyphens: auto;
-        text-align: justify;
     }
 
-    h1 {
+    article h1 {
+        margin-block: 2rem;
+        border-block-end: 1px solid #000;
+        padding-block: 0.25em;
         font-size: 2.25rem;
+    }
+
+    article h2 {
         margin-block: 2em 1em;
+        border-block-end: 1px solid #000;
+        padding-block: 0.25em;
     }
 
     article > :first-child {
