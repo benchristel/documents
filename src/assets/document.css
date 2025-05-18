@@ -26,6 +26,12 @@
         /* Hide the header and footer nav links */
         display: none;
     }
+
+    a, a:visited {
+        /* Remove link styling from printed document */
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
 /*
