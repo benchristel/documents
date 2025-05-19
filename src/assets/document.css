@@ -57,6 +57,10 @@
  * Print-only styles
  */
 @media print {
+    html {
+        font-size: 10pt;
+    }
+
     header, footer {
         /* Hide the header and footer nav links */
         display: none;
@@ -99,6 +103,12 @@
         white-space: pre-wrap;
     }
 
+    article :is(pre, code) {
+        font-family: 'DejaVu Sans Mono', Menlo, 'Fira Code', monospace;
+        font-size: 0.75rem;
+        hyphens: none;
+    }
+
     article blockquote {
         /* Indent block quotes */
         margin-inline: var(--indent-size);
@@ -120,6 +130,10 @@
         margin-block: 2em 1em;
         border-block-end: 1px solid #000;
         padding-block: 0.25em;
+    }
+
+    article h3 {
+        margin-block: 2em 1em;
     }
 
     article > :first-child {
