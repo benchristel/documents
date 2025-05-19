@@ -119,21 +119,37 @@
         margin-inline: calc(2 * var(--indent-size));
     }
 
+    article img {
+        display: block;
+        margin: 1em auto;
+        max-width: 100%;
+        page-break-inside: avoid;
+    }
+
+    article figcaption {
+        font-size: 0.875em;
+        text-align: center;
+        margin-inline: calc(1.5 * var(--indent-size));
+    }
+
     article h1 {
         margin-block: 2rem;
         border-block-end: 1px solid #000;
         padding-block: 0.25em;
         font-size: 2rem;
+        page-break-after: avoid;
     }
 
     article h2 {
         margin-block: 2em 1em;
         border-block-end: 1px solid #000;
         padding-block: 0.25em;
+        page-break-after: avoid;
     }
 
     article h3 {
         margin-block: 2em 1em;
+        page-break-after: avoid;
     }
 
     article > :first-child {
