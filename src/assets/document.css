@@ -5,6 +5,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: inherit;
 }
 
 /*
@@ -16,6 +17,7 @@
     --article-max-width: 8.5in;
     --indent-size: min(0.5in, 6vw);
     --margin-size: min(0.75in, 9vw);
+    --min-font-size: 14px;
 }
 
 /*
@@ -132,24 +134,43 @@
         margin-inline: calc(1.5 * var(--indent-size));
     }
 
-    article h1 {
-        margin-block: 2rem;
+    article h1:not(hgroup > *),
+    article hgroup:has(> h1) {
+        margin-block: 2em 1em;
         border-block-end: 1px solid #000;
         padding-block: 0.25em;
         font-size: 2rem;
         page-break-after: avoid;
     }
 
-    article h2 {
+    article h2:not(hgroup > *),
+    article hgroup:has(> h2) {
         margin-block: 2em 1em;
         border-block-end: 1px solid #000;
         padding-block: 0.25em;
+        font-size: 1.5rem;
         page-break-after: avoid;
     }
 
-    article h3 {
+    article h3:not(hgroup > *),
+    article hgroup:has(> h3) {
         margin-block: 2em 1em;
+        font-size: 1.25rem;
         page-break-after: avoid;
+    }
+
+    article h4:not(hgroup > *),
+    article hgroup:has(> h4) {
+        margin-block: 2em 1em;
+        font-size: 1rem;
+        page-break-after: avoid;
+    }
+
+
+    hgroup > p {
+        margin-block: 0.5em;
+        font-style: italic;
+        font-size: max(0.625em, var(--min-font-size));
     }
 
     article > :first-child {
