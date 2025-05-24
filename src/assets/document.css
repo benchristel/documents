@@ -147,13 +147,14 @@
         page-break-inside: avoid;
     }
 
+    article figure {
+        /* center figures that are narrower than the text block */
+        margin-inline: auto;
+    }
+
     article figcaption {
         font-size: 0.875em;
         text-align: center;
-    }
-
-    article figcaption:not([float-right] *, [float-left] *) {
-        margin-inline: calc(1.5 * var(--indent-size));
     }
 
     /*
@@ -163,6 +164,11 @@
      * at block-start) to ensure headings stay at least 1em away from floated
      * elements.
      */
+
+    article :is(h1, h2, h3, h4, h5, h6, hgroup) {
+        /* Don't justify headings */
+        text-align: left;
+    }
 
     article h1:not(hgroup > *),
     article hgroup:has(> h1) {
@@ -229,20 +235,6 @@
 
     article > :first-child {
         margin-block-start: 0;
-    }
-
-    [float-right] {
-        float: right;
-        margin-left: 1em;
-    }
-
-    [float-left] {
-        float: left;
-        margin-right: 1em;
-    }
-
-    [float-right], [float-left] {
-        max-width: 50%;
     }
 
     /*
@@ -330,6 +322,10 @@
     }
 }
 
+/*
+ * Styles for narrow screens
+ */
+
 @media screen and (max-width: 600px) {
     :root {
         --body-padding: 0;
@@ -337,5 +333,29 @@
 
     article {
         border-inline: none;
+    }
+}
+
+/*
+ * Styles for wide screens
+ */
+
+@media screen and (min-width: 601px) {
+    [float-right] {
+        float: right;
+        margin-left: 1em;
+    }
+
+    [float-left] {
+        float: left;
+        margin-right: 1em;
+    }
+
+    [float-right], [float-left] {
+        max-width: 50%;
+    }
+
+    article figcaption:not([float-right] *, [float-left] *) {
+        margin-inline: calc(1.5 * var(--indent-size));
     }
 }
