@@ -84,6 +84,10 @@
     }
 
     article {
+        /*
+         * Ensure the article stretches vertically to contain floated elements.
+         */
+        display: flow-root;
         hyphens: auto;
         text-align: justify;
     }
@@ -131,39 +135,74 @@
     article figcaption {
         font-size: 0.875em;
         text-align: center;
+    }
+
+    article figcaption:not([float-right] *, [float-left] *) {
         margin-inline: calc(1.5 * var(--indent-size));
     }
 
+    /*
+     * Headings
+     *
+     * We combine margin and padding the way we do in headings (1em of each
+     * at block-start) to ensure headings stay at least 1em away from floated
+     * elements.
+     */
+
     article h1:not(hgroup > *),
     article hgroup:has(> h1) {
-        margin-block: 2em 1em;
+        margin-block: 1em;
         border-block-end: 1px solid #000;
-        padding-block: 0.25em;
+        padding-block: 1em 0.25em;
         font-size: 2rem;
         page-break-after: avoid;
+        clear: both;
     }
 
     article h2:not(hgroup > *),
     article hgroup:has(> h2) {
-        margin-block: 2em 1em;
+        margin-block: 1em;
         border-block-end: 1px solid #000;
-        padding-block: 0.25em;
+        padding-block: 1em 0.25em;
         font-size: 1.5rem;
         page-break-after: avoid;
+        clear: both;
     }
 
     article h3:not(hgroup > *),
     article hgroup:has(> h3) {
-        margin-block: 2em 1em;
+        margin-block: 1em;
+        padding-block: 1em 0.25em;
         font-size: 1.25rem;
         page-break-after: avoid;
+        clear: both;
     }
 
     article h4:not(hgroup > *),
     article hgroup:has(> h4) {
-        margin-block: 2em 1em;
+        margin-block: 1em;
+        padding-block: 1em 0.25em;
+        font-size: 1.1rem;
+        page-break-after: avoid;
+        clear: both;
+    }
+
+    article h5:not(hgroup > *),
+    article hgroup:has(> h5) {
+        margin-block: 1em;
+        padding-block: 1em 0.25em;
         font-size: 1rem;
         page-break-after: avoid;
+        clear: both;
+    }
+
+    article h6:not(hgroup > *),
+    article hgroup:has(> h6) {
+        margin-block: 1em;
+        padding-block: 1em 0.25em;
+        font-size: 0.9rem;
+        page-break-after: avoid;
+        clear: both;
     }
 
 
@@ -175,6 +214,20 @@
 
     article > :first-child {
         margin-block-start: 0;
+    }
+
+    [float-right] {
+        float: right;
+        margin-left: 1em;
+    }
+
+    [float-left] {
+        float: left;
+        margin-right: 1em;
+    }
+
+    [float-right], [float-left] {
+        max-width: 50%;
     }
 }
 
