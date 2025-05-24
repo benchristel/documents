@@ -110,9 +110,24 @@
     }
 
     article :is(pre, code) {
+        margin-block: 1rem;
         font-family: 'DejaVu Sans Mono', Menlo, 'Fira Code', monospace;
         font-size: 0.85em;
         hyphens: none;
+        text-align: left;
+    }
+
+    pre:has(> code) {
+        --border-thickness: 1px;
+        --padding: 0.5em;
+        border: 1px solid #ddd;
+        border-radius: 0.25em;
+        background: #f6f6f6;
+        padding: 0.5em;
+    }
+
+    pre:has(> code):not(:is([float-left], [float-right]) *) {
+        margin-inline: calc(-1 * (var(--border-thickness) + var(--padding)));
     }
 
     article blockquote {
