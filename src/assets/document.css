@@ -290,6 +290,7 @@
         max-width: var(--article-max-width);
         min-height: var(--header-footer-min-height);
         padding-block: 1rem;
+        padding-inline: var(--margin-size);
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 0.875rem;
     }
@@ -299,12 +300,13 @@
         color: #800;
         /* text-shadow: 0 1px #fff; */
         text-decoration: none;
+        padding-inline-end: 0.5em;
     }
 
     :is(header, footer) nav a::before {
         content: "➤";
         display: inline-block;
-        padding-inline: 0.5em;
+        padding-inline-end: 0.5em;
     }
 
     article {
