@@ -244,6 +244,39 @@
     [float-right], [float-left] {
         max-width: 50%;
     }
+
+    /*
+     * Syntax highlighting
+     */
+    
+    .hljs-keyword,
+    .hljs-name,
+    .hljs-meta {
+        font-weight: bold;
+        color: #118;
+    }
+    
+    .hljs-string,
+    .hljs-regexp {
+        font-weight: bold;
+        color: #484;
+    }
+    
+    .hljs-number,
+    .hljs-attribute,
+    .hljs-symbol {
+        color: #118;
+    }
+
+    .hljs-attr,
+    .hljs-selector-class {
+        color: #826;
+    }
+
+    .hljs-title.class_ {
+        font-weight: bold;
+        color: #605;
+    }
 }
 
 /*
