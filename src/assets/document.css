@@ -95,6 +95,7 @@
     
     /* Add vertical margin between block elements */
     article p,
+    article table,
     /* Top-level lists have block margin, but nested lists do not */
     article > :is(ul, ol) {
         margin-block: 1rem;
@@ -249,6 +250,25 @@
 
     article > :first-child {
         margin-block-start: 0;
+    }
+
+    article table {
+        text-align: left;
+        font-size: 0.875em;
+        border-collapse: collapse;
+    }
+
+    article :is(td, th) {
+        padding-inline: 0.5em;
+        padding-block: 0.25em;
+    }
+
+    article th {
+        background: #eee;
+    }
+
+    article tr:not(:last-child) {
+        border-block-end: 1px solid #bbb;
     }
 
     /*
