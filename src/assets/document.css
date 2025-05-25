@@ -153,6 +153,7 @@
     }
 
     article figcaption {
+        margin-block: 1em;
         font-size: 0.875em;
         text-align: center;
     }
