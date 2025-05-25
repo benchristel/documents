@@ -149,7 +149,7 @@
         page-break-inside: avoid;
     }
 
-    article figure {
+    article figure, article figure > * {
         /* center figures that are narrower than the text block */
         margin-inline: auto;
     }
