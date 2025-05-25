@@ -234,6 +234,18 @@
         font-size: max(0.625em, var(--min-font-size));
     }
 
+    article > hr {
+        border: none;
+    }
+
+    article > hr::after {
+        display: block;
+        margin-block: 2em;
+        content: '✥ ✥ ✥';
+        text-align: center;
+        color: #000;
+    }
+
     article > :first-child {
         margin-block-start: 0;
     }
@@ -340,10 +352,10 @@
 }
 
 /*
- * Styles for wide screens
+ * Styles for wide screens and print
  */
 
-@media screen and (min-width: 601px) {
+@media (min-width: 601px) {
     [float-right] {
         float: right;
         margin-left: 1em;
