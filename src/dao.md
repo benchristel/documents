@@ -43,6 +43,17 @@ When concerns are separated, on the other hand, there is contrast between the pa
 <figcaption>Detail on the wall of the Linz Café, by Christopher Alexander</figcaption>
 </figure>
 
+In a poorly-structured codebase, all the code has a similar texture. Everywhere you look, it’s approximately the same: a mishmash of different stuff. A bit of SQL, a bit of calculation, a sprinkling of HTML. Every function seems to operate on a mixture of domain concepts and language-level primitives.
+
+When concerns are separated, on the other hand, there is contrast between the parts. The UI code looks very different from the database access code. When you open a file, you can tell at a glance what type of thing it is, and know where it fits in the architecture.
+
+<figure>
+
+![Field walls on the Haworth Moor, England](/assets/images/landscape.webp)
+
+<figcaption>A landscape image</figcaption>
+</figure>
+
 ### The Squint Test
 
 Sandi Metz has a technique she calls the squint test: you lean back and squint at the code, looking for changes in shape and changes in color. The more coherence and consistency you see in each part, the better the code is.
