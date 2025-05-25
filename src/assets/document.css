@@ -80,7 +80,8 @@
  */
 @media screen, print {
     html {
-        font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif; 
+        font-family: 'Iowan Old Style', 'URW Palladio L', 'Palatino Linotype', P052, serif;
+        line-height: 1.3;
     }
 
     article {
