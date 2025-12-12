@@ -157,5 +157,29 @@ Stick close to the Origin.
 
 ---
 
+> We join spokes together in a wheel,<br>
+> but it is the center hole<br>
+> that makes the wagon move.
+>
+> We shape clay into a pot,<br>
+> but it is the emptiness inside<br>
+> that holds whatever we want.
+>
+> We hammer wood for a house,<br>
+> but it is the inner space<br>
+> that makes it livable.
+>
+> We work with being,<br>
+> but non-being is what we use. 
+
+We work with code,<br>
+but the space of possible behaviors is what we use.<br>
+Immortal programs are like Unix:<br>
+Free of preconceptions, profoundly empty.<br>
+Empty, empty,<br>
+perfectly void.
+
+---
+
 In authoring this file, I used `<br>` tags to create line breaks.<br>
 Take that, nerds.
