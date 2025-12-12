@@ -23,37 +23,7 @@
 /*
  * Font imports
  */
-@font-face {
-    font-family: 'Iowan Old Style';
-    src: url(/assets/fonts/iowan-old-style/bold.ttf);
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: 'Iowan Old Style';
-    src: url(/assets/fonts/iowan-old-style/regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Iowan Old Style';
-    src: url(/assets/fonts/iowan-old-style/italic.ttf);
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Iowan Old Style';
-    src: url(/assets/fonts/iowan-old-style/bold-italic.ttf);
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
 
 /*
  * Print-only styles
