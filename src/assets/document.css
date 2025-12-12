@@ -16,7 +16,7 @@
     --body-padding: 1rem;
     --article-max-width: 8.5in;
     --indent-size: min(0.5in, 6vw);
-    --margin-size: min(0.75in, 9vw);
+    --margin-size: min(1in, 9vw);
     --min-font-size: 14px;
 }
 
@@ -254,7 +254,7 @@
 
     article table {
         text-align: left;
-        font-size: 0.875em;
+        font-size: 0.9375em;
         border-collapse: collapse;
     }
 
@@ -353,7 +353,8 @@
         border: 1px solid #999;
         box-shadow: 0 2px 6px #0004;
         background: #fff;
-        padding: var(--margin-size);
+        padding-inline: var(--margin-size);
+        padding-block: 0.75in;
         max-width: var(--article-max-width);
     }
 }
