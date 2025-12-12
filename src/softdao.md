@@ -19,6 +19,30 @@ Oh what am I to do?
 > Naming is the origin<br>
 > of all particular things. 
 
+---
+
+You think wisdom is hard to come by?<br>
+Then you must think most people are fools.<br>
+You think truth is difficult to find?<br>
+Then you must think most people are ignorant.
+
+Why, then, do you let them tell you what's good or bad?<br>
+Why appoint them the judges of your progress?<br>
+Why let them tell you how to be, and whom to be?<br>
+They obviously don't know the first thing about it.
+
+What is the point of trying to get ahead of such people?<br>
+They aren't going where you want to be.
+
+> The Master stays behind;<br>
+> that is why she is ahead.<br>
+> She is detached from all things;<br>
+> that is why she is one with them.<br>
+> Because she has let go of herself,<br>
+> she is perfectly fulfilled. 
+
+---
+
 There are two types of software developers:<br>
 Call them Achilles and Socrates.<br>
 Achilles asks "how do I ...?"<br>
@@ -27,8 +51,11 @@ Achilles goes fast. Socrates goes far.
 
 Achilles only sees the surface.<br>
 Chasing desire, he struggles with one special case after another.<br>
-Socrates does not struggle. He has found the Origin<br>
-Which does nothing, yet produces everything.
+Socrates doesn't struggle. He seeks the Origin<br>
+Which is evident everywhere,<br>
+Doing nothing, yet producing everything.<br>
+Once he finds it, nothing can stop him.<br>
+Infinite worlds unfold without effort.
 
 > Free from desire, you realize the mystery.<br>
 > Caught in desire, you see only the manifestations.
@@ -110,6 +137,8 @@ If all else fails, take a nap.
 > Practice not-doing,
 > and everything will fall into place.
 
+---
+
 > The Tao is like a well:
 > used but never used up.
 > It is like the eternal void:
@@ -118,3 +147,15 @@ If all else fails, take a nap.
 > It is hidden but always present.
 > I don't know who gave birth to it.
 > It is older than God. 
+
+Almost all numbers are incomprehensibly large.<br>
+But the ones we use are all more or less nearly zero.<br>
+Almost all possible programs are incomprehensibly complex.<br>
+But the ones we use are all more or less simple.
+
+Stick close to the Origin.
+
+---
+
+In authoring this file, I used `<br>` tags to create line breaks.<br>
+Take that, nerds.
