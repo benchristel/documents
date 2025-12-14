@@ -19,6 +19,9 @@ Oh what am I to do?
 > Naming is the origin<br>
 > of all particular things. 
 
+The way that is marked is not the Way.
+The Way is how the way got that way.
+
 ---
 
 You think wisdom is hard to come by?<br>
@@ -66,6 +69,9 @@ Infinite worlds unfold without effort.
 >
 > Darkness within darkness.<br>
 > The gateway to all understanding.
+
+But until Socrates finds the Origin, he is mute.<br>
+Achilles' great strength is that he begins.
 
 ---
 
@@ -139,13 +145,13 @@ If all else fails, take a nap.
 
 ---
 
-> The Tao is like a well:
-> used but never used up.
-> It is like the eternal void:
+> The Tao is like a well:<br>
+> used but never used up.<br>
+> It is like the eternal void:<br>
 > filled with infinite possibilities.
 >
-> It is hidden but always present.
-> I don't know who gave birth to it.
+> It is hidden but always present.<br>
+> I don't know who gave birth to it.<br>
 > It is older than God. 
 
 Almost all numbers are incomprehensibly large.<br>
@@ -153,7 +159,7 @@ But the ones we use are all more or less nearly zero.<br>
 Almost all possible programs are incomprehensibly complex.<br>
 But the ones we use are all more or less simple.
 
-Stick close to the Origin.
+Stay close to the Origin.
 
 ---
 
@@ -174,7 +180,8 @@ Stick close to the Origin.
 
 We work with code,<br>
 but the space of possible behaviors is what we use.<br>
-Immortal programs are like Unix:<br>
+Immortal programs are open, limitless;<br>
+The wind blows through them.<br>
 Free of preconceptions, profoundly empty.<br>
 Empty, empty,<br>
 perfectly void.
